@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
-
 :root {
-    --bg-white-color: #fff;
-    --bg-blue-color: #3b699a;
-    --bg-orange-color: #e79003;
-    --font-white-color: #fff;
-    --font-blue-color: #3b699a;
-    --font-orange-color: #e79003;
-    --hover-color: #3b699a;
-    --hover-two-color: #e79003; 
+   --bg-color: #121212;
+   --bg-white-color: #F9FBFE;
+   --bg-grey-color : #202020;
+   --border-color: #eaeaeb;
+   --txt-color: #fff;
+   --txt-dark-color: #181D23;
+   --txt-a-color: #0CBBC5;
+   --txt-p-color: #96989B;
+   --txt-alt-color: #ffffff;
+   --form-border-color: #D5D5D7;
+   --form-focus-color: #fff;
+   --form-bg-color: transparent;
+   --form-txt-color: #fff;
+   --btn-txt-color: #ffffff;
+   --btn-bg-color: #0CBBC5;
+   --btn-bg-hover-color: #0CBBC5;
+   --element-bg-color: #80b1ff;
+   --element-darken-bg-color: #0CBBC5;
+   --element-lighten-bg-color: #e6f0ff;
 }
 
 body {
-    background-image: url('./img/bg.jpg');
+    background-color: var(--bg-color);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -30,24 +40,24 @@ body.show-scrollbar {
 }
 
 .form-control {
-    caret-color: var(--font-white-color);
+    caret-color: var(--form-txt-color);
     background-color: transparent;
-    border: 1px solid var(--font-white-color);
+    border: 1px solid var(--form-border-color);
 
 }
 
 .form-control::placeholder {
-    color: var(--font-white-color);
+    color: var(--form-txt-color);
 }
 
 .form-control:focus {
-    background-color: transparent;
-    border-color: var(--hover-color);
-    color: var(--font-white-color);
+    background-color: var(--form-bg-color);
+    border-color: var(--form-focus-color);
+    color: var(--form-txt-color);
 }
 
 i {
-    color: var(--font-white-color);
+    color: var(--form-txt-color);
 }
 
 a {
@@ -74,17 +84,20 @@ button {
 
 
 .navbar-nav .nav-item .nav-link {
-    color: var(--font-white-color);
+    color: var(--form-txt-color);
     transition: .5s;
+    text-transform:uppercase;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 #header.header-scrolled .nav-link {
-    color: var(--font-blue-color);
+    color: var(--txt-dark-color);
 }
 
 #header.header-scrolled .navbar-brand,
 #header.header-scrolled i {
-    color: var(--font-blue-color);
+    color: var(--txt-dark-color-color);
 }
 #header.header-scrolled .logo{
     width: 30px;
@@ -95,32 +108,23 @@ button {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: var(--hover-two-color);
+    color: var(--element-darken-bg-color);
+    
 }
 
 #header.header-scrolled .nav-link:hover {
-    color: var(--hover-two-color);
-}
-
-#header.header-scrolled .btn-white {
-    background-color: var(--bg-orange-color);
-    color: var(--font-white-color);
-}
-
-#header.header-scrolled .btn-white:hover {
-    background-color: var(--hover-color);
-    color: var(--font-white-color);
+    color: var(--element-darken-bg-color);
 }
 
 .navbar-brand {
-    color: var(--font-white-color);
-    font-weight:600;
+    color: var(--txt-color);
+    font-weight:bold;
 }
 .navbar-brand:hover{
-    color: var(--font-white-color);
+    color: var(--txt-color);
 }
 .logo{
-    width: 40px;
+    width: 30px;
 }
 
 .offcanvas,
@@ -133,134 +137,100 @@ button {
     --bs-offcanvas-height: 100vh;
 }
 
-
-
-
-/* @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-} */
-
 h5 {
     font-size: 18px;
     text-transform: uppercase;
-    color: var(--font-orange-color);
+    color: var(--txt-a-color);
 }
 
 .home {
-    margin-top: 10vh;
-    min-height: 100vh;
+    background: url("./img/bg.jpg") top center;
+    background-size: cover;
     
 }
-
+@media (min-width: 1024px) {
+    .home {
+      background-attachment: fixed;
+    }
+  }
+.home .container {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
 .home h1 {
     font-size: 70px;
-    color: var(--font-white-color);
+    color: var(--txt-color);
     font-weight: bold;
 
 }
 
 .home p {
     font-size: 18px;
-    color: var(--font-white-color);
+    color: var(--txt-p-color);
 
-}
-
-
-.btn-white {
-    background-color: var(--bg-white-color);
-    color: var(--font-blue-color);
-    transition: .5s;
-    max-width: max-content;
-}
-
-.btn-white:hover {
-    background-color: var(--hover-color);
-    color: var(--font-white-color);
 }
 
 .btn-blue {
-    background-color: var(--bg-orange-color);
-    color: var(--font-white-color);
+    background-color: var(--btn-bg-color);
+    color: var(--btn-txt-color);
     transition: .5s;
 
 }
-
 .btn-blue.chatinput {
-    border: 1px solid var(--font-white-color);
+    border: 1px solid var(--form-border-color);
     border-left: none;
 
 }
-
-
-
 .btn-blue:hover {
-    background-color: var(--hover-color);
-    color: var(--font-white-color);
+    background-color: var(--btn-bg-hover-color);
+    color: var(--btn-txt-color);
 }
-
-.main-content {
-    background-color: var(--bg-orange-color);
-}
-
 .about {
-    background-color: var(--bg-orange-color);
+    /* background-color: var(--bg-grey-color); */
     min-height: 80vh;
-    border-bottom: 1px solid var(--bg-white-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.439);
 }
 
 .services {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.439);
-    background-color: var(--bg-orange-color);
+    background-color: var(--bg-grey-color);
     min-height: 90vh;
-    border-bottom: 1px solid var(--bg-white-color);
+    overflow: hidden;
 }
 
 .about h5,
 .services h5 {
-    color: var(--font-white-color);
+    color: var(--txt-a-color);
     font-weight: bold;
+
 }
 
 .about p {
     font-size: 20px;
-    color: var(--font-white-color);
+    color: var(--txt-color);
     margin-bottom: 30px;
     text-align: justify;
 }
-
+.serv-box {
+    background-color: var(--bg-color);
+}
 
 .serv-box i {
     font-size: 5rem;
-    color: var(--font-white-color);
+    color: var(--txt-a-color);
     margin-bottom: 30px;
     transition: .5s;
 }
 
-.serv-box:hover i {
-    transform: translateX(30px);
-    color: var(--font-blue-color);
-}
 
 .serv-box h1 {
-    color: var(--font-white-color);
+    color: var(--txt-color);
     font-size: 22px;
 
 }
 
 .serv-box p {
     text-align: justify;
-    color: var(--font-white-color);
+    color: var(--txt-p-color);
     font-size: 18px;
 }
 
@@ -271,9 +241,11 @@ h5 {
 .footer {
     height: 9vh;
     background-color: var(--bg-orange-color);
-    color: var(--font-white-color);
+    color: var(--txt-color);
 }
-
+.page-header h5{
+    color: var(--txt-color);
+}
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -305,181 +277,11 @@ h5 {
 .chatbot-container {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .chatbot-container h5 {
     color: var(--font-white-color);
-}
-
-.chat {
-    height: 85vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: var(--bg-orange-color);
-
-}
-
-
-.sidebar-text {
-    font-size: .875rem;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    padding: 0;
-    margin: 0;
-    transition: .5s;
-}
-
-.sidebar-text:hover {
-    text-decoration: underline;
-}
-
-.sidebarChatBot {
-    max-width: 350px;
-    background-color: var(--bg-orange-color);
-}
-
-.sidebarChatBot button {
-    background-color: var(--bg-white-color);
-    color: var(--font-blue-color);
-    font-weight: 900;
-    transition: .5s;
-}
-
-.sidebarChatBot button i {
-    color: var(--font-blue-color);
-    transition: .5s;
-}
-
-.sidebarChatBot button:hover i {
-    color: var(--font-white-color);
-}
-
-.sidebarChatBot button:hover {
-    color: var(--font-white-color);
-    background-color: var(--bg-blue-color);
-
-}
-
-.sidebarChatBot i {
-    color: var(--font-blue-color);
-}
-
-.conv-date {
-    color: var(--font-white-color);
-    font-size: .7rem;
-    padding: 0;
-    margin: 0;
-}
-
-.chat-date {
-    color: var(--font-white-color);
-    font-size: .7rem;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar-box {
-    color: var(--font-white-color);
-    cursor: pointer;
-    background-color: var(--bg-blue-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.439);
-}
-
-.sidebar-box-active {
-    box-shadow: inset 0px 0px 0px 1px var(--font-white-color);
-}
-
-.chat .chat-text {
-    margin-bottom: .25em;
-    font-size: 0.9rem;
-}
-
-.sent {
-    color: var(--font-white-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.439);
-}
-
-.sent.user {
-    color: var(--font-blue-color);
-    background-color: var(--bg-white-color);
-}
-
-.sent.robot {
-    background-color: var(--bg-blue-color);
-    color: var(--font-white-color);
-}
-
-.fa-robot {
-    color: var(--font-blue-color);
-}
-
-.fa-user {
-    color: var(--font-white-color);
-}
-
-.sent i {
-    color: var(--font-orange-color);
-}
-
-.username p {
-    color: var(--font-white-color);
-}
-
-.img-container img {
-    max-height: 70vh;
-    width: auto;
-}
-
-.img-container button {
-    width: 200px;
-}
-
-#MicroButton {
-    font-size: 1.5rem;
-}
-
-.form-container {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    
-}
-
-.form-container form {
-    width: 500px;
-    background-color: var(--bg-orange-color);
-    border: 1px solid var(--font-white-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.439);
-}
-
-.form-container form h5 {
-    font-size: 40px;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: var(--font-white-color);
-}
-
-.form-container form p {
-    font-size: 18px;
-    color: var(--font-white-color);
-}
-.form-container form .btn-blue{
-    background-color: var(--bg-blue-color);
-}
-.form-container form .btn-blue:hover{
-    background-color: var(--bg-white-color);
-    color: var(--font-blue-color);
-}
-.form-container .form-link {
-    font-size: 13px;
-    color: var(--font-white-color);
-}
-
-.form-container .form-link span {
-    text-decoration: underline;
 }
 
 @media (max-width: 992px) {
@@ -496,13 +298,13 @@ h5 {
         color: var(--hover-color);
     }
 
-    .offcanvas .btn-white {
+    .offcanvas .btn-blue {
         background-color: var(--font-blue-color);
         color: var(--font-white-color);
 
     }
 
-    .offcanvas .btn-white:hover {
+    .offcanvas .btn-blue:hover {
         background-color: var(--hover-color);
         color: var(--font-white-color);
     }

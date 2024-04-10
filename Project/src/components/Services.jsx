@@ -2,11 +2,11 @@ import React from "react";
 
 function Services() {
   return (
-    <div className="services px-lg-5 px-3 py-5 mx-2 mx-lg-5 ">
+    <div id="service" className="services px-lg-5 px-3 py-5 ">
       <h5 className="text-center">Our services</h5>
       <div className="row">
         <div className="col-md-12">
-          <div className="row serv-box py-5 px-4" data-aos="fade-up">
+          <div data-aos-delay="100" data-aos="fade-left" className="row serv-box rounded-4  py-5 px-1  px-lg-5 mx-1 mx-lg-5 my-3">
             <div className="col-md-3 d-flex flex-column align-items-center justify-content-center">
               <i class="fa-regular fa-message"></i>
               <h1>Chat Bot</h1>
@@ -25,7 +25,7 @@ function Services() {
           </div>
         </div>
         <div className="col-md-12">
-          <div className="row serv-box py-5 px-4"  data-aos="fade-up" >
+          <div data-aos-delay="200" data-aos="fade-right" className="row serv-box rounded-4 py-5 px-1  px-lg-5 mx-1 mx-lg-5 my-3"  >
             <div className="col-md-3 d-flex flex-column align-items-center justify-content-center">
               <i class="fa-regular fa-image"></i>
               <h1>Image Generator</h1>
@@ -45,7 +45,7 @@ function Services() {
           </div>
         </div>
         <div className="col-md-12">
-          <div className="row serv-box py-5 px-4"  data-aos="fade-up">
+          <div data-aos-delay="300" data-aos="fade-left" className="row serv-box rounded-4 py-5 px-1  px-lg-5 mx-1 mx-lg-5 my-3" >
             <div className="col-md-3 d-flex flex-column align-items-center justify-content-center">
               <i class="fa-regular fa-file-lines"></i>
               <h1>Documents Generator</h1>

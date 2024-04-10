@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { motion } from "framer-motion"
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../img/LogoBlue.png'
+import logo from '../img/Logo.png'
 function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
@@ -26,7 +26,7 @@ function Navbar() {
     id='header' className="navbar navbar-expand-lg px-5 fixed-top">
     <div className="container-fluid">
       <Link to="/" className="navbar-brand d-flex align-items-center" >
-        <img src={logo} className='me-1 logo' alt="" srcset="" /> Namodaj
+        <img src={logo} className='me-1 logo' alt="" srcset="" /> arabicPDF
       </Link>
  
       <i id='menuIcon' className="fa-solid fa-bars d-lg-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i>
@@ -41,22 +41,17 @@ function Navbar() {
               <NavLink className="nav-link px-3 "  to="/"  activeclassname="active" exact="true" aria-current="page" >Home</NavLink>
             </li>
             <li className="nav-item d-flex justify-content-center text-center">
-              <NavLink className="nav-link px-3 my-2 my-lg-0"  to="/chatBot"
-                     activeclassname="active" exact="true" >Chat Bot</NavLink>
+              <a className="nav-link px-3 my-2 my-lg-0"  href='#about'
+                     activeclassname="active" exact="true" >About</a>
             </li>
+            {/* <li className="nav-item d-flex justify-content-center text-center">
+              <a className="nav-link px-3 my-2 my-lg-0"  href='#about'
+                     activeclassname="active" exact="true" >Service</a>
+            </li> */}
             <li className="nav-item d-flex justify-content-center text-center">
-              <NavLink className="nav-link px-3 my-2 my-lg-0 "  to="/imageGenerator"
-                     activeclassname="active" exact="true" aria-current="page" >Images Generator</NavLink>
+              <a className="nav-link px-3 my-2 my-lg-0"  href='#about'
+                     activeclassname="active" exact="true" >How to use</a>
             </li>
-            <li className="nav-item d-flex justify-content-center text-center">
-              <NavLink className="nav-link px-3 my-2 my-lg-0"  to="/documentGenerator"
-                     activeclassname="active" exact="true">Documents Geneator</NavLink>
-            </li>
-            <li className="nav-item d-flex justify-content-center text-center">
-            <Link to="/login" className="btn btn-white rounded-5 px-3 my-2 my-lg-0">Connection</Link>
-            </li>
-          
-
           </ul>
         </div>
       </div>
