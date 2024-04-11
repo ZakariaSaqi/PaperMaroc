@@ -47,12 +47,12 @@ function DocumentGenerator() {
             className="page-header d-flex flex-row align-items-center justify-content-between pb-2 px-2 px-lg-5"
           >
             <span to="/" className="navbar-brand d-flex align-items-center">
-              <img src={logo} className="me-1 logo" alt="" /> arabicPDF
+              <img src={logo} className="me-1 logo" alt="" srcset="" /> arabicPDF
             </span>
 
             <Link to="/">
               {" "}
-              <i className="fa-solid fa-arrow-right"></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </Link>
           </motion.div>
           <motion.div
@@ -73,10 +73,11 @@ function DocumentGenerator() {
 
             <div className="input-group-append">
               <button
+                id="sendQuestionButton"
                 className="btn btn-blue chatinput no-outline rounded-start-0 rounded-end-4"
                 onClick={generatePDF}
               >
-                <>{isGenerating ? 'Generating...' : 'Generate'}</>
+                <span>{isGenerating ? 'Generating...' : 'Generate'}</span>
               </button>
             </div>
           </motion.div>
@@ -91,7 +92,7 @@ function DocumentGenerator() {
 }
 
 const Spinner = () => (
-  <div className="spinner-border text-primary" role="status">
+  <div className="spinner-border " role="status">
     <span className="visually-hidden">Loading...</span>
   </div>
 );

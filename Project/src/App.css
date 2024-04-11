@@ -15,7 +15,7 @@
    --form-txt-color: #fff;
    --btn-txt-color: #ffffff;
    --btn-bg-color: #0CBBC5;
-   --btn-bg-hover-color: #80b1ff;
+   --btn-bg-hover-color: #fff;
    --element-bg-color: #80b1ff;
    --element-darken-bg-color: #0CBBC5;
    --element-lighten-bg-color: #e6f0ff;
@@ -173,6 +173,8 @@ h5 {
 }
 
 .btn-blue {
+    text-transform: uppercase;
+    font-weight: bold;
     background-color: var(--btn-bg-color);
     color: var(--btn-txt-color);
     transition: .5s;
@@ -185,7 +187,7 @@ h5 {
 }
 .btn-blue:hover {
     background-color: var(--btn-bg-hover-color);
-    color: var(--btn-txt-color);
+    color: var(--txt-a-color);
 }
 .about {
     min-height: 80vh;
@@ -283,8 +285,13 @@ h5 {
 .chatbot-container h5 {
     color: var(--font-white-color);
 }
-
-
+.pdf{
+    height: 550px;
+    width: 350px;
+}
+.spinner-border {
+    color: var(--txt-a-color);
+}
 #howtouse img{
   max-width: 70%;
     height: auto;

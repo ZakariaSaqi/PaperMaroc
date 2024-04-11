@@ -38,7 +38,7 @@ function Navbar() {
         <div className="offcanvas-body px-3 my-2 my-lg-0 d-flex  justify-content-center align-items-center">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item d-flex justify-content-center text-center">
-              <NavLink className="nav-link px-3 "  to="/"  activeclassname="active" exact="true" aria-current="page" >Home</NavLink>
+              <a className="nav-link px-3 "  href="#home"  activeclassname="active" exact="true" aria-current="page" >Home</a>
             </li>
             <li className="nav-item d-flex justify-content-center text-center">
               <a className="nav-link px-3 my-2 my-lg-0"  href='#about'

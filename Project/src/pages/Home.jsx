@@ -7,7 +7,7 @@ import HowToUse from "../components/HowToUse";
 function Home() {
   return (
     <>
-      <div className="home">
+      <div id="home" className="home">
         <div className=" container text-center  px-5 d-flex flex-column justify-content-center align-items-center">
           <motion.h5
             initial={{ y: "-100vh" }}
