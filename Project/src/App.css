@@ -302,31 +302,19 @@ h5 {
         max-width: 100%;
       }
     .offcanvas {
-        background-color: var(--bg-white-color);
+        background-color: var(--bg-color);
     }
 
     .offcanvas .navbar-nav .nav-item .nav-link {
-        color: var(--font-blue-color);
+        color: var(--txt-color);
         transition: .5s;
     }
 
     .navbar-nav .nav-item .nav-link:hover {
-        color: var(--hover-color);
+        color: var(--txt-a-color);
     }
-
-    .offcanvas .btn-blue {
-        background-color: var(--font-blue-color);
-        color: var(--font-white-color);
-
-    }
-
-    .offcanvas .btn-blue:hover {
-        background-color: var(--hover-color);
-        color: var(--font-white-color);
-    }
-
     .offcanvas .close {
-        color: var(--font-blue-color);
+        color: var(--txt-color);
     }
     .home h1 {
         font-size: 50px;
