@@ -15,7 +15,7 @@
    --form-txt-color: #fff;
    --btn-txt-color: #ffffff;
    --btn-bg-color: #0CBBC5;
-   --btn-bg-hover-color: #0CBBC5;
+   --btn-bg-hover-color: #80b1ff;
    --element-bg-color: #80b1ff;
    --element-darken-bg-color: #0CBBC5;
    --element-lighten-bg-color: #e6f0ff;
@@ -43,6 +43,7 @@ body.show-scrollbar {
     caret-color: var(--form-txt-color);
     background-color: transparent;
     border: 1px solid var(--form-border-color);
+    color: var(--txt-color);
 
 }
 
@@ -187,7 +188,6 @@ h5 {
     color: var(--btn-txt-color);
 }
 .about {
-    /* background-color: var(--bg-grey-color); */
     min-height: 80vh;
 }
 
@@ -240,7 +240,7 @@ h5 {
 
 .footer {
     height: 9vh;
-    background-color: var(--bg-orange-color);
+    background-color: var(--bg-grey-color);
     color: var(--txt-color);
 }
 .page-header h5{
@@ -284,7 +284,16 @@ h5 {
     color: var(--font-white-color);
 }
 
+
+#howtouse img{
+  max-width: 70%;
+    height: auto;
+}
+
 @media (max-width: 992px) {
+    #howtouse img{
+        max-width: 100%;
+      }
     .offcanvas {
         background-color: var(--bg-white-color);
     }
@@ -312,12 +321,6 @@ h5 {
     .offcanvas .close {
         color: var(--font-blue-color);
     }
-
-}
-
-@media (max-width: 992px) {
-
-
     .home h1 {
         font-size: 50px;
     }

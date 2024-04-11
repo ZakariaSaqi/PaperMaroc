@@ -6,7 +6,7 @@ function Footer() {
       <p className="m-0">
         2024 &copy; Copyright{" "}
         <strong>
-          <span>Namodaj</span>
+          <span>arabicPDF</span>
         </strong>
         . All Rights Reserved
       </p>

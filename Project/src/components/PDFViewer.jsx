@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import samplePDF from './ChapitrePolymorphisme.pdf'; 
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-function PDFViewer() {
+function PDFViewer({ pdfUrl }) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -12,14 +11,10 @@ function PDFViewer() {
     setNumPages(numPages);
   }
 
-  function handleDownload() {
-    window.open(samplePDF); 
-  }
-
   return (
     <>
       <Document className="mb-3"
-        file={samplePDF}
+        file={pdfUrl}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page
@@ -28,7 +23,6 @@ function PDFViewer() {
           height={500}
         />
       </Document>
-      <button className='btn btn-blue btn-sm rounded-5 px-5' onClick={handleDownload}>Download PDF</button>
     </>
   );
 }

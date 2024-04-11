@@ -26,7 +26,7 @@ function Navbar() {
     id='header' className="navbar navbar-expand-lg px-5 fixed-top">
     <div className="container-fluid">
       <Link to="/" className="navbar-brand d-flex align-items-center" >
-        <img src={logo} className='me-1 logo' alt="" srcset="" /> arabicPDF
+        <img src={logo} className='me-1 logo' alt="" /> arabicPDF
       </Link>
  
       <i id='menuIcon' className="fa-solid fa-bars d-lg-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i>
@@ -44,13 +44,13 @@ function Navbar() {
               <a className="nav-link px-3 my-2 my-lg-0"  href='#about'
                      activeclassname="active" exact="true" >About</a>
             </li>
-            {/* <li className="nav-item d-flex justify-content-center text-center">
-              <a className="nav-link px-3 my-2 my-lg-0"  href='#about'
-                     activeclassname="active" exact="true" >Service</a>
-            </li> */}
             <li className="nav-item d-flex justify-content-center text-center">
               <a className="nav-link px-3 my-2 my-lg-0"  href='#about'
-                     activeclassname="active" exact="true" >How to use</a>
+                     activeclassname="active" exact="true" >FEATURES</a>
+            </li>
+            <li className="nav-item d-flex justify-content-center text-center">
+              <a className="nav-link px-3 my-2 my-lg-0"  href='#howtouse'
+                     activeclassname="active" exact="true" >How to use ?</a>
             </li>
           </ul>
         </div>
