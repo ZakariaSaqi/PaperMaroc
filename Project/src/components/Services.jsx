@@ -12,7 +12,7 @@ function Services() {
             className="row serv-box rounded-4  py-5 px-1  px-lg-5 mx-1 mx-lg-5 my-3"
           >
             <div className="col-md-3 d-flex flex-column align-items-center justify-content-center">
-            <i class="fa-solid fa-hourglass-end"></i>
+            <i className="fa-solid fa-hourglass-end"></i>
               <h1 className="text-center">Time and Effort Saving</h1>
             </div>
             <div className="col-md-9 px-5 d-flex flex-column align-items-center">
@@ -32,7 +32,7 @@ function Services() {
             className="row serv-box rounded-4 py-5 px-1  px-lg-5 mx-1 mx-lg-5 my-3"
           >
             <div className="col-md-3 d-flex flex-column align-items-center justify-content-center">
-            <i class="fa-regular fa-file-lines"></i>
+            <i className="fa-regular fa-file-lines"></i>
               <h1 className="text-center">Variety of Documents</h1>
             </div>
             <div className="col-md-9 px-5 d-flex flex-column align-items-center">
@@ -53,7 +53,7 @@ function Services() {
             className="row serv-box rounded-4 py-5 px-1  px-lg-5 mx-1 mx-lg-5 my-3"
           >
             <div className="col-md-3 d-flex flex-column align-items-center justify-content-center">
-            <i class="fa-solid fa-list-check"></i>
+            <i className="fa-solid fa-list-check"></i>
               <h1 className="text-center">Accuracy and Compliance</h1>
             </div>
             <div className="col-md-9 px-5 d-flex flex-column align-items-center">
@@ -70,7 +70,7 @@ function Services() {
             className="row serv-box rounded-4 py-5 px-1  px-lg-5 mx-1 mx-lg-5 my-3"
           >
             <div className="col-md-3 d-flex flex-column align-items-center justify-content-center">
-            <i class="fa-solid fa-shield-halved"></i>
+            <i className="fa-solid fa-shield-halved"></i>
               <h1 className="text-center">Secure and Confidential</h1>
             </div>
             <div className="col-md-9 px-5 d-flex flex-column align-items-center">
