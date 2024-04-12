@@ -244,6 +244,7 @@ h5 {
     height: 9vh;
     background-color: var(--bg-grey-color);
     color: var(--txt-color);
+    font-size: 15px;
 }
 .page-header h5{
     color: var(--txt-color);
@@ -298,6 +299,8 @@ h5 {
 }
 
 @media (max-width: 992px) {
+    #header.header-scrolled {
+        max-width: 90vw;}
     #howtouse img{
         max-width: 100%;
       }

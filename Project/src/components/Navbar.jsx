@@ -23,7 +23,7 @@ function Navbar() {
     initial={{ opacity: 0, y: -50 }} 
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 1 }}
-    id='header' className="navbar navbar-expand-lg px-5 fixed-top">
+    id='header' className="navbar navbar-expand-lg px-lg-5 px-1 fixed-top">
     <div className="container-fluid">
       <Link to="/" className="navbar-brand d-flex align-items-center" >
         <img src={logo} className='me-1 logo' alt="" /> arabicPDF
