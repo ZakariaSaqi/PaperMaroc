@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 function Services() {
   const [t, i18n] = useTranslation();
   return (
-    <div id="service" className="services px-lg-5 px-3 py-5 ">
+    <div id="features" className="services px-lg-5 px-3 py-5 ">
       <h5 className="text-center">{t('services.title')}</h5>
       <div className="row">
         <div className="col-md-12">

@@ -84,7 +84,7 @@ function Navbar() {
               <li className="nav-item d-flex justify-content-center text-center">
                 <a
                   className="nav-link px-3 my-2 my-lg-0"
-                  href="#about"
+                  href="#features"
                   activeclassname="active"
                   exact="true"
                 >
