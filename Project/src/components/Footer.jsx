@@ -10,7 +10,7 @@ function Footer() {
           <span>arabicPDF</span>
         </strong>{" "}
         2024 &copy; Copyright {t("footer.copy")} <br />
-      {" "} {t("footer.webgenius")}
+     {t("footer.webgenius")}  {" "} 
         <Link className="links" to="https://webgenius212.onrender.com/">
           <strong>WebGenius212</strong>
         </Link>
