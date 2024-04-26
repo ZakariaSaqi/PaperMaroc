@@ -53,7 +53,7 @@ function Navbar() {
             <div className=""></div>
             <i
               type="button"
-              className="fa-solid fa-xmark close"
+              className="fa-solid fa-xmark close d-block d-lg-none"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></i>

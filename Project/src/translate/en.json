@@ -31,7 +31,10 @@
       "title": "How to use ?",
       "content": "To use our document generator, simply enter your information in the provided input field. Specify the type of document you need, whether it's a national identity card (CNI), residence permit, birth certificate, or any other document required. Fill in the relevant details such as your full name, date of birth, address, and any other necessary information. Once you've entered all your information, click the 'Generate' button. Our system will process your data and generate the requested document in PDF format. You can then download and print the document for your records or use it as needed."
     },
-    "footer" : " . All Rights Reserved",
+    "footer" : {
+      "copy" : " . All Rights Reserved",
+      "webgenius" : " Created and developed by "
+    },
     "docgenerator" : {
       "placeholder" : "Type here ... ",
       "generate" : "Generate",

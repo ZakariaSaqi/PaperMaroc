@@ -31,7 +31,10 @@
       "title": "Comment utiliser ?",
       "content": "Pour utiliser notre générateur de documents, il vous suffit d'entrer vos informations dans le champ prévu à cet effet. Spécifiez le type de document dont vous avez besoin, qu'il s'agisse d'une carte nationale d'identité (CNI), d'un permis de séjour, d'un acte de naissance ou de tout autre document requis. Remplissez les détails pertinents tels que votre nom complet, votre date de naissance, votre adresse et toute autre information nécessaire. Une fois que vous avez saisi toutes vos informations, cliquez sur le bouton 'Générer'. Notre système traitera vos données et générera le document demandé au format PDF. Vous pourrez ensuite télécharger et imprimer le document pour vos archives ou l'utiliser selon vos besoins."
     },
-    "footer" :  "Tous droits réservés.",
+    "footer" : {
+      "copy" :  "Tous droits réservés.",
+      "webgenius" :   "Créé et développé par"
+    },
     "docgenerator": {
       "placeholder": "Saisissez ici ...",
       "generate": "Générer",

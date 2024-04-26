@@ -134,15 +134,7 @@ button {
     width: 30px;
 }
 
-.offcanvas,
-.offcanvas-lg,
-.offcanvas-md,
-.offcanvas-sm,
-.offcanvas-xl,
-.offcanvas-xxl {
-    transition: 1s;
-    --bs-offcanvas-height: 100vh;
-}
+
 
 h5 {
     font-size: 18px;
@@ -252,8 +244,13 @@ h5 {
     height: 9vh;
     background-color: var(--bg-grey-color);
     color: var(--txt-color);
-    font-size: 15px;
+    font-size: 13px;
+    text-align: center;
 }
+.footer .links{
+    color: var(--white);
+    text-decoration: underline;
+  }
 .page-header h5{
     color: var(--txt-color);
 }
